@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FastLaunch Studio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link rel="stylesheet" href="swiper-bundle.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="popup">
+			<div class="popup__overlay">
+				<form action="https://api.web3forms.com/submit" method="POST"    class="popup__form">
+					<span class="popup__status"></span>
+					<div class="popup__close">&times;</div>
+                    <h2 class="popup__title">Задать вопрос</h2>
+                    <div class="popup__wrap">
+						<input type="hidden" name="access_key" value="4abdbaac-cf19-47b2-a882-f05931f786fe">
+						<label for="name" class="popup__label">имя*</label>
+					   <input name="name" id="name" type="text" class="popup__inp" required>
+				    </div>
+				    <div class="popup__wrap">
+					   <label for="email" class="popup__label">email*</label>
+					   <input name="email" id="email" type="email" class="popup__inp" required>
+				    </div>
+				    <div class="popup__wrap">
+					   <label for="tel" class="popup__label">телефон</label>
+					   <input name="phone" id="tel" type="tel" class="popup__inp">
+				    </div>
+					<textarea name="message" id=""class="popup__text" placeholder="Вопрос..."></textarea>
+					<button class="popup__btn">отправить</button>
+				</form>
+			</div>
+	</div>
+	<div id="top" class="page">
+		<header class="header">
+			<div class="header__stripe header__stripe--blue">
+			</div>
+			<div class="header__stripe header__stripe--orange">
+			</div>
+			<div class="header__margin">
+			</div>
+			<div class="header__logo">
+				<div class="header__logo-wrap-img">
+					<img class="header__logo-img" src="logo2.png" alt="FastLaunch Studio">
+				</div>
+				<div class="header__logo-contacts"><i class="fa-solid fa-phone-volume"></i><span class="header__logo-phone">7-945-512-322</span> 
+				</div>
+			</div>
+			<div class="header__info">
+				<h1> <img class="header__info-title" src="1323.png" alt="FastLaunch Studio"></h1>
+				<span class="header__info-slogan">разработка сайтов по любые нужды</span>
+			</div>
+		</header>
+		<section class="about">
+			<h2 class="page__title page__title--about">Компания</h2>
+			<div class="about__wrap">
+			    <div class="about__img-wrap">
+				    <img class="about__img" src="загрузка.png" alt="">
+			    </div>
+			    <div class="about__info">
+				    <p>Мы занимаемся разработкой сайтов под ключ уже более 5 лет.
+                    Создаём решения для бизнеса любой сложности — от простых визиток до масштабных интернет-магазинов и веб-приложений.
+                    В работе сочетаем современный дизайн, адаптивную верстку, быструю загрузку и удобную, интуитивно понятную систему управления, без перегрузки функционалом.</p>
+                    <h3 class="about__reasons-title">Почему выбирают нас?</h3>
+                    <ul class="about__reasons">
+                        <li><i class="fa-regular fa-circle-check"></i>         Лояльная ценовая политика</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Чёткое соблюдение сроков и прозрачная коммуникация</li>
+                        <li><i class="fa-regular fa-circle-check"></i>  Индивидуальный подход к каждой задаче</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Гарантия качества и поддержка после запуска</li>
+                    </ul>
+			    </div>
+            </div>
+		</section>	
+		<section class="service">
+			<h2 class="page__title page__title--service">Наши услуги</h2>
+			<div class="service__wrap">
+				<div class="service__block service__block--lending">
+					<div class="service__site-icon service__site-icon--lending"><i class="fa-solid fa-rocket"></i></div>
+					<h3 class="service__site-title">Лендинги</h3>
+                    <p class="service__site-info">Одностраничный сайт, направленный на продвижение одного продукта, услуги или предложения.
+                    Создан для фокусного внимания, высокой конверсии и быстрого действия со стороны посетителя.
+                    </p>
+                    <p class="service__price"><span class="service__price-icon">&#10004;</span> Цена: от 7000р</p>
+				</div>
+			    <div class="service__block service__block--business">
+			    	<div class="service__site-icon service__site-icon--business"><i class="fa-solid fa-address-card"></i></div>
+			    	<h3 class="service__site-title">Сайт-визитка</h3>
+			    	<p class="service__site-info">Небольшой сайт с основной информацией о компании или специалисте: кто вы, чем занимаетесь, контакты и формы обратной связи.
+                    Идеален для представления в интернете и первого знакомства с клиентами.</p>
+                    <p class="service__price"><span class="service__price-icon">&#10004;</span> Цена: от 10000р</p>
+                </div>    
+			    <div class="service__block service__block--multi">
+			    	<div class="service__site-icon service__site-icon--multi"><i class="fa-solid fa-sitemap"></i></div>
+			    	<h3 class="service__site-title">Многостроничный</h3>
+			    	<p class="service__site-info">Полноценный сайт с разделами: «О компании», «Услуги», «Портфолио», «Контакты» и другими.
+                    Подходит для бизнеса, которому нужно подробно рассказать о себе, своих продуктах и услугах.
+                    </p>
+                    <p class="service__price"><span class="service__price-icon">&#10004;</span> Цена: от 15000р</p>
+			    </div>
+			    <div class="service__block service__block--shop">
+			    	<div class="service__site-icon service__site-icon--shop"><i class="fa-solid fa-cart-shopping"></i></div>
+			    	<h3 class="service__site-title">Интернет-магазин</h3>
+			    	<p class="service__site-info">Функциональный сайт с каталогом товаров, корзиной и оформлением заказа.
+                    Позволяет продавать онлайн, принимать оплату и управлять заказами прямо с сайта.</p>
+                    <p class="service__price"><span class="service__price-icon">&#10004;</span> Цена: от 25000р</p>
+			    </div>
+			</div>	
+		</section>
+		<section class="works">
+			<h2 class="page__title page__title--service">Примеры работ
+			</h2>
+			<div class="swiper">
+                <div class="swiper-wrapper">
+                	 <div class="swiper-slide"><img src="medium (1).jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="medium.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="interface-design.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="photo_5346125379254997916_y-768x1024.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"><i class="fa-etch fa-solid fa-backward"></i></div>
+            <div class="swiper-button-next"><i class="fa-notdog fa-solid fa-forward"></i></div>
+            <div class="a">
+            <div class="swiper-pagination"></div>
+            </div>
+		</section>
+		<section class="call-to-action">
+			<div class="call-to-action__scroll-up"><a href="#top" class="scroll-up" aria-label="Наверх">
+            <i class="fas fa-arrow-up"></i></a>
+            </div>
+			<div class="call-to-action__wrap">
+			<p class="call-to-action__text">остались вопросы? мы на связи!</p>
+			<button class="call-to-action__btn">Связаться с нами</button>
+		    </div>
+		</section>
+		<footer class="footer">
+			<div class="footer__contacts">
+				<p><i class="fas fa-envelope"></i><span class="header__logo-phone">Ice2508@yandex.ru</span></p>
+				<p><i class="fa-solid fa-phone-volume"></i><span class="header__logo-phone">7-945-512-322</span></p> 
+			</div>
+			<div class="footer__messages">
+				<span>Мы в социальных сетях:</span>
+				<i class="footer_messages-icon fab fa-vk"></i>
+                <i class="footer_messages-icon fab fa-facebook-f"></i>
+                <i class="footer_messages-icon fab fa-telegram"></i>
+			</div>	
+		</footer>
+    </div>
+     <script src="swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
