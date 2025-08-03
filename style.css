@@ -536,11 +536,11 @@ html {
 
 	.service__site-info {
 		text-align: left;
-		font-size: 20px;
+		font-size: 24px;
 	}
 
 	.service__site-title {
-		font-size: 22px;
+		font-size: 26px;
 	}
 
 	.swiper {
@@ -562,10 +562,10 @@ html {
   }
 
   .popup__inp {
-  	height: 42px;
+  	height: 50px;
   }
 
   .popup__btn {
-  	height: 50px;
+  	height: 55px;
   }
 }
