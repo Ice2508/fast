@@ -251,6 +251,8 @@ html {
   height: 500px;
   margin-bottom: 20px;
   cursor: grab;
+  touch-action: pan-y; 
+  overscroll-behavior: contain; 
  }
 
 .swiper-container {
