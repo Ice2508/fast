@@ -25,18 +25,33 @@ const swiper = new Swiper('.swiper', {
   slideShadows: true,
   shadowOffset: 20,
   shadowScale: 0.94,
-},
-on: {
-    touchStart() {
-      document.body.style.overflow = 'hidden';
-      document.documentElement.style.overflow = 'hidden';
-    },
-    touchEnd() {
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = '';
-    }
   }
 });
+
+const swiperEl = document.querySelector('.swiper');
+
+let touchStartX = 0;
+let touchStartY = 0;
+
+swiperEl.addEventListener('touchstart', (e) => {
+  if (e.touches.length === 1) {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+  }
+}, { passive: true });
+
+swiperEl.addEventListener('touchmove', (e) => {
+  if (e.touches.length !== 1) return;
+
+  const deltaX = e.touches[0].clientX - touchStartX;
+  const deltaY = e.touches[0].clientY - touchStartY;
+
+  // если свайп по горизонтали больше вертикального — блокируем прокрутку страницы
+  if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    e.preventDefault(); // запретить прокрутку страницы при горизонтальном свайпе
+  }
+}, { passive: false });
+
 
 const callTOActionBtn = document.querySelector('.call-to-action__btn');
 const popupOverlay = document.querySelector('.popup__overlay');
