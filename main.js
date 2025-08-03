@@ -46,9 +46,8 @@ swiperEl.addEventListener('touchmove', (e) => {
   const deltaX = e.touches[0].clientX - touchStartX;
   const deltaY = e.touches[0].clientY - touchStartY;
 
-  // если свайп по горизонтали больше вертикального — блокируем прокрутку страницы
   if (Math.abs(deltaX) > Math.abs(deltaY)) {
-    e.preventDefault(); // запретить прокрутку страницы при горизонтальном свайпе
+    e.preventDefault(); 
   }
 }, { passive: false });
 

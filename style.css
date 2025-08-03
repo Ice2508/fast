@@ -569,7 +569,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	.swiper {
     width: 100%;
-    height: 515px;
+    height: 510px;
     padding: 0 35px;
 	}
 
@@ -613,11 +613,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 499px) {
   .header__logo {
-  	justify-content: flex-end;
-  }
-
-  .header__logo-wrap-img {
-  	display: none;
+  	padding: 0 14px;
   }
 
   .service__wrap {
