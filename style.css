@@ -64,7 +64,7 @@ html {
 }
 
 .header__logo {
-    width: 100%;
+  width: 100%;
 	height: 85px;
 	background: white;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -286,12 +286,6 @@ html {
   content: ''; 
  }
 
-.a {
-	width: 100px;
-    margin: auto;
-    margin-top: 50px;
-}
-
 /*секция для связи*/
 
 .call-to-action {
@@ -304,7 +298,7 @@ html {
 }
 
 .call-to-action__scroll-up {
-    color: white; 
+  color: white; 
 	position: absolute;
 	width: 40px;
 	height: 40px;
@@ -371,8 +365,13 @@ html {
 
 .footer__messages {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	gap: 5px;
+}
+
+.footer__messages-wrap {
+	display: flex;
+	gap: 7px;
 }
 
 .footer_messages-icon {
@@ -511,4 +510,50 @@ html {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, -110%);
+}
+
+/*Медиазапросы*/
+
+@media (max-width: 1000px) {
+	.about__wrap {
+		flex-wrap: wrap;
+	}
+
+	.about__img-wrap {
+		width: 100%;
+		height: 365px;
+	}
+
+	.about__info {
+		width: 100%;
+	}
+
+	.service__wrap {
+		flex-wrap: wrap;
+	}
+
+	.service__block {
+		width: calc(50% - 28px);
+	}
+
+	.service__site-info {
+		text-align: left;
+	}
+
+	.swiper {
+    width: 100%;
+    padding: 0 35px;
+	}
+
+	.swiper-button-prev {
+		display: none;
+  }
+
+  .swiper-button-next {
+  	display: none;
+  }
+
+  .call-to-action{
+  	padding-bottom: 20px;
+  }
 }
