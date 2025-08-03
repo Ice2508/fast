@@ -150,7 +150,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .about__reasons-title {
 	text-align: center;
-	margin: 10px 0 4px;
+	margin: 12px 0 5px;
+	font-weight: bold;
 }
 
 .about__reasons {
@@ -318,6 +319,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .call-to-action__wrap {
 	text-align: center;
+	margin: 0 10px;
 }
 
 .call-to-action__text {
@@ -528,10 +530,11 @@ h1, h2, h3, h4, h5, h6 {
 
 	.about__info {
 		width: 100%;
+		font-size: 18px;
 	}
-
-.about__reasons  {
-		font-size: 20px;
+ 
+  .about__reasons  {
+		font-size: 18px;
 	}
 
 	.service__wrap {
@@ -540,26 +543,31 @@ h1, h2, h3, h4, h5, h6 {
 
 	.service__block {
 		width: calc(50% - 28px);
+		padding-bottom: 55px;
 	}
 
 	.service__site-info {
 		text-align: left;
-		font-size: 20px;
+		font-size: 18px;
+	}
+
+	.service__price {
+		font-size: 18px;
 	}
 
 	.service__site-title {
-		font-size: 24px;
+		font-size: 22px;
 	}
 
 	.service__site-icon {
-		width: 60px;
-		height: 70px;
-		font-size: 24px;
+		width: 50px;
+		height: 58px;
+		font-size: 20px;
 	}
 
 	.swiper {
     width: 100%;
-    height: 550px;
+    height: 525px;
     padding: 0 35px;
 	}
 
@@ -571,21 +579,29 @@ h1, h2, h3, h4, h5, h6 {
   	display: none;
   }
 
+  .call-to-action {
+  	padding: 25px 0 30px;
+  }
+
+  .call-to-action__text {
+  	font-size: 24px;
+  }
+
   .popup__form {
   	width: calc(100% - 70px);
   	margin: 0 35px;
   }
 
   .popup__inp {
-  	height: 50px;
+  	height: 40px;
   }
    
   .popup__text {
-  	height: 105px;
+  	height: 100px;
   } 
 
   .popup__btn {
-  	height: 60px;
+  	height: 50px;
   }
 
   .popup__close {
