@@ -14,6 +14,13 @@ html {
   scrollbar-gutter: stable;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: inherit;
+}
+
 .page {
 	max-width: 1100px;
 	margin: auto;
@@ -197,11 +204,7 @@ html {
   margin-left: 20px;
 }
 
-.service__site-icon img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
+
 
 .service__site-title {
 	margin-top: 10px;
@@ -231,6 +234,7 @@ html {
 	position: absolute;
 	bottom: 0;
 	left: 5%;
+	font-size: 20px;
 }
 
 .service__price-icon {
@@ -519,15 +523,15 @@ html {
 
 	.about__img-wrap {
 		width: 100%;
-		height: 365px;
+		height: 370px;
 	}
 
 	.about__info {
 		width: 100%;
 	}
 
-	.about__reasons {
-		font-size: 24px;
+.about__reasons  {
+		font-size: 20px;
 	}
 
 	.service__wrap {
@@ -540,11 +544,17 @@ html {
 
 	.service__site-info {
 		text-align: left;
-		font-size: 44px;
+		font-size: 20px;
 	}
 
 	.service__site-title {
-		font-size: 26px;
+		font-size: 24px;
+	}
+
+	.service__site-icon {
+		width: 60px;
+		height: 70px;
+		font-size: 24px;
 	}
 
 	.swiper {
@@ -571,10 +581,14 @@ html {
   }
    
   .popup__text {
-  	height: 100px;
+  	height: 105px;
   } 
 
   .popup__btn {
   	height: 60px;
+  }
+
+  .popup__close {
+  	font-size: 50px;
   }
 }
