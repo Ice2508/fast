@@ -152,7 +152,6 @@ html {
 
 .fa-circle-check {
 	vertical-align: middle;
-	font-size: 14px;
 }
 
 /*Cекция сервисс*/
@@ -193,7 +192,7 @@ html {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   box-sizing: border-box;
   margin-left: 20px;
 }
@@ -414,7 +413,6 @@ html {
 
 .popup__form {
 	width: 390px;
-	height: 500px;
 	background: whitesmoke;
 	display: flex;
 	flex-direction: column;
@@ -538,6 +536,11 @@ html {
 
 	.service__site-info {
 		text-align: left;
+		font-size: 20px;
+	}
+
+	.service__site-title {
+		font-size: 22px;
 	}
 
 	.swiper {
@@ -553,7 +556,16 @@ html {
   	display: none;
   }
 
-  .call-to-action{
-  	padding-bottom: 20px;
+  .popup__form {
+  	width: calc(100% - 70px);
+  	margin: 0 35px;
+  }
+
+  .popup__inp {
+  	height: 42px;
+  }
+
+  .popup__btn {
+  	height: 50px;
   }
 }
