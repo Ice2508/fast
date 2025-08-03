@@ -28,6 +28,16 @@ const swiper = new Swiper('.swiper', {
   shadowOffset: 20,
   shadowScale: 0.94,
 },
+on: {
+    touchStart() {
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+    },
+    touchEnd() {
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+    }
+  }
 });
 
 const callTOActionBtn = document.querySelector('.call-to-action__btn');
