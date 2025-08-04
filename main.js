@@ -3,6 +3,7 @@
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
+  cssMode: true,
   pagination: {
     el: '.swiper-pagination',
   },
@@ -21,37 +22,6 @@ const swiper = new Swiper('.swiper', {
     shadowScale: 0.94,
   }
 });
-
-const swiperEl = document.querySelector('.swiper');
-
-let touchStartX = 0;
-let touchStartY = 0;
-let isSwiping = null; // флаг для направления
-
-swiperEl.addEventListener('touchstart', (e) => {
-  if (e.touches.length === 1) {
-    touchStartX = e.touches[0].clientX;
-    touchStartY = e.touches[0].clientY;
-    isSwiping = null; // сброс
-  }
-}, { passive: true });
-
-swiperEl.addEventListener('touchmove', (e) => {
-  if (e.touches.length !== 1) return;
-
-  const deltaX = e.touches[0].clientX - touchStartX;
-  const deltaY = e.touches[0].clientY - touchStartY;
-
-  // определяем направление один раз
-  if (isSwiping === null) {
-    isSwiping = Math.abs(deltaX) > Math.abs(deltaY);
-  }
-
-  if (isSwiping) {
-    e.preventDefault(); // блокируем только горизонтальный свайп
-  }
-}, { passive: false });
-
 
 const callTOActionBtn = document.querySelector('.call-to-action__btn');
 const popupOverlay = document.querySelector('.popup__overlay');
