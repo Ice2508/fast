@@ -1,30 +1,24 @@
 'use strict'
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: true,
-  // If we need pagination
   pagination: {
     el: '.swiper-pagination',
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
   scrollbar: {
     el: '.swiper-scrollbar',
   },
   effect: 'cube',
   cubeEffect: {
-  shadow: true,
-  slideShadows: true,
-  shadowOffset: 20,
-  shadowScale: 0.94,
+    shadow: true,
+    slideShadows: true,
+    shadowOffset: 20,
+    shadowScale: 0.94,
   }
 });
 
@@ -32,11 +26,13 @@ const swiperEl = document.querySelector('.swiper');
 
 let touchStartX = 0;
 let touchStartY = 0;
+let isSwiping = null; // флаг для направления
 
 swiperEl.addEventListener('touchstart', (e) => {
   if (e.touches.length === 1) {
     touchStartX = e.touches[0].clientX;
     touchStartY = e.touches[0].clientY;
+    isSwiping = null; // сброс
   }
 }, { passive: true });
 
@@ -46,8 +42,13 @@ swiperEl.addEventListener('touchmove', (e) => {
   const deltaX = e.touches[0].clientX - touchStartX;
   const deltaY = e.touches[0].clientY - touchStartY;
 
-  if (Math.abs(deltaX) > Math.abs(deltaY)) {
-    e.preventDefault(); 
+  // определяем направление один раз
+  if (isSwiping === null) {
+    isSwiping = Math.abs(deltaX) > Math.abs(deltaY);
+  }
+
+  if (isSwiping) {
+    e.preventDefault(); // блокируем только горизонтальный свайп
   }
 }, { passive: false });
 
