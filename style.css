@@ -29,7 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page__title {
-	font-size: 30px;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
 	margin: 55px auto 50px;
