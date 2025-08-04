@@ -567,7 +567,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 510px;
     padding: 0 35px;
     overscroll-behavior: contain; 
-    touch-action: pan-y;
+    touch-action: none;
 	}
 
 	.swiper-button-prev {
