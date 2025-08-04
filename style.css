@@ -29,7 +29,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page__title {
-	font-size: 36px;
+	font-size: 30px;
+	text-transform: uppercase;
 	text-align: center;
 	margin: 55px auto 50px;
 }
@@ -105,11 +106,6 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-.header__info-title {
-	font-size: 60px;
-	color: red;
-}
-
 .header__info-slogan {
 	text-decoration: underline;
 	font-style: italic;
@@ -179,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 .service__block {
 	width: calc(25% - 41px);
 	position: relative;
-	padding-bottom: 32px;
+	padding-bottom: 34px;
 }
 
 .service__site-info {
@@ -236,7 +232,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: auto;
 	position: absolute;
 	bottom: 0;
-	left: 5%;
 	font-size: 20px;
 }
 
@@ -589,6 +584,10 @@ h1, h2, h3, h4, h5, h6 {
   	font-size: 24px;
   }
 
+  .footer {
+  	gap: 60px;
+  }
+
   .popup__form {
   	width: calc(100% - 70px);
   	margin: 0 35px;
@@ -631,7 +630,39 @@ h1, h2, h3, h4, h5, h6 {
    }
    
   .footer {
-   	 gap: 25px;
+   	 gap: 22px;
    	 padding: 0 10px;
+   }
+}
+
+ @media (max-width: 395px) {
+  .header__logo {
+   	font-size: 15px;
+   	padding: 0 10px;
+   }
+  
+  .header__info {
+  	padding: 45px 15px;
+  	font-size: 22px;
+  }
+
+  .header__info-title {
+  	width: 95%;
+  }
+
+  .header__logo-wrap-img {
+  	width: 185px;
+  }
+
+   .footer__contacts {
+   	 font-size: 13px;
+   }
+
+   .footer__messages {
+   	font-size: 13px;
+   }
+
+   .popup__form {
+   	width: 89%;
    }
 }
