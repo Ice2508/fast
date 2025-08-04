@@ -19,17 +19,13 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-  effect: isMobile ? 'flip' : 'cube',
+  effect: isMobile ? 'fade' : 'cube',
   cubeEffect: {
   shadow: true,
   slideShadows: true,
   shadowOffset: 20,
   shadowScale: 0.94,
   },
-  flipEffect: {
-  slideShadows: true,
-  limitRotation: true,
-  }
 });
 
 const swiperEl = document.querySelector('.swiper');
