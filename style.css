@@ -566,9 +566,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 510px;
     padding: 0 35px;
-    overscroll-behavior: contain; 
-    touch-action: none;
-	}
+  }
+
+	.swiper,
+  .swiper-wrapper,
+  .swiper-slide {
+    touch-action: pan-y;
+    overscroll-behavior: contain;
+}
 
 	.swiper-button-prev {
 		display: none;
