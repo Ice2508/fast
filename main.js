@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-  effect: isMobile ? 'slide' : 'cube',
+  effect: isMobile ? 'flip' : 'cube',
   cubeEffect: {
   shadow: true,
   slideShadows: true,
