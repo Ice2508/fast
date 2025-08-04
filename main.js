@@ -25,6 +25,10 @@ const swiper = new Swiper('.swiper', {
   slideShadows: true,
   shadowOffset: 20,
   shadowScale: 0.94,
+  },
+  flipEffect: {
+  slideShadows: true,
+  limitRotation: true,
   }
 });
 
