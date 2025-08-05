@@ -69,8 +69,8 @@ callTOActionBtn.addEventListener('click', () => {
 });
 
 popupClose.addEventListener('click', () => {
-    popupOverlay.classList.remove('popup__overlay--active');
     popupForm.classList.remove('popup__form--active');
+    popupOverlay.classList.remove('popup__overlay--active');
     document.documentElement.style.overflow = '';
 })
 
