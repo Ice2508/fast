@@ -453,11 +453,10 @@ h1, h2, h3, h4, h5, h6 {
 	transition: color 0.3s ease;
 }
 
-.popup__close:focus {
+.popup__close:focus, [tabindex]:focus {
+	outline: 2px solid transparent;
 	background: none;
-	transform: none;
-	box-shadow: none;
-	outline: none;
+	box-shadow: 0 0 0 2px red;
 }
 
 .popup__close:hover {
