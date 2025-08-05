@@ -73,7 +73,7 @@ popupClose.addEventListener('click', () => {
     popupForm.classList.remove('popup__form--active');
     popupOverlay.classList.remove('popup__overlay--active');
     document.documentElement.style.overflow = '';
-  },200)
+  },100)
 })
 
 popupForm.addEventListener('submit', async (e) => {
