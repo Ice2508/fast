@@ -451,6 +451,16 @@ h1, h2, h3, h4, h5, h6 {
 	right: -25px;
 	cursor: pointer;
 	transition: color 0.3s ease;
+	tap-highlight-color: transparent;
+	outline: none !important;
+	appearance: none;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.popup__close:active {
+	transform: none !important;
+
 }
 
 .popup__close:hover {
