@@ -23,19 +23,12 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-  effect: isMobile ? 'coverflow' : 'cube',
+  effect: isMobile ? 'slide' : 'cube',
   cubeEffect: {
   shadow: true,
   slideShadows: true,
   shadowOffset: 20,
   shadowScale: 0.94,
-  },
-  coverflowEffect: {
-    rotate: 30,
-    stretch 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
   },
 });
 
