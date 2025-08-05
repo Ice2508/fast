@@ -1,4 +1,6 @@
 'use strict'
+AOS.init();
+
 const isMobile = window.matchMedia('(max-width: 768px)').matches;
 const swiper = new Swiper('.swiper', {
   // Optional parameters
