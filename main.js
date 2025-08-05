@@ -69,9 +69,11 @@ callTOActionBtn.addEventListener('click', () => {
 });
 
 popupClose.addEventListener('click', () => {
+    setTimeout(() => {
     popupForm.classList.remove('popup__form--active');
     popupOverlay.classList.remove('popup__overlay--active');
     document.documentElement.style.overflow = '';
+  },50)
 })
 
 popupForm.addEventListener('submit', async (e) => {
