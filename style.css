@@ -578,11 +578,11 @@ h1, h2, h3, h4, h5, h6 {
   }
  
   .swiper-button-prev {
-	margin-left: 7%;
+	margin-left: 5%;
   }
 
   .swiper-button-next {
-  	margin-right: 7%;
+  	margin-right: 5%;
   }
 
   .call-to-action {
