@@ -66,6 +66,14 @@ callTOActionBtn.addEventListener('click', () => {
      popupOverlay.classList.add('popup__overlay--active');
      popupForm.classList.add('popup__form--active');
      document.documentElement.style.overflow = 'hidden';
+     const overlayActive = document.querySelector('.popup__overlay--active');
+     overlayActive.addEventListener('click', () => {
+      setTimeout(() => {
+        popupForm.classList.remove('popup__form--active');
+        popupOverlay.classList.remove('popup__overlay--active');
+        document.documentElement.style.overflow = '';
+  },100)
+     });
 });
 
 popupClose.addEventListener('click', () => {
@@ -73,8 +81,10 @@ popupClose.addEventListener('click', () => {
     popupForm.classList.remove('popup__form--active');
     popupOverlay.classList.remove('popup__overlay--active');
     document.documentElement.style.overflow = '';
-  },100)
+  },100);
 })
+
+
 
 popupForm.addEventListener('submit', async (e) => {
     e.preventDefault();
