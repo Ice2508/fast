@@ -284,10 +284,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 28px;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: ''; 
- }
 
 /*секция для связи*/
 
@@ -578,11 +574,11 @@ h1, h2, h3, h4, h5, h6 {
   }
  
   .swiper-button-prev {
-	margin-left: 2%;
+	margin-left: 3%;
   }
 
   .swiper-button-next {
-  	margin-right: 2%;
+  	margin-right: 3%;
   }
 
   .call-to-action {
@@ -637,6 +633,15 @@ h1, h2, h3, h4, h5, h6 {
    	 width: 100%;
    	 padding-bottom: 45px;
    }
+
+   .swiper-button-prev {
+	margin-left: 1.2%;
+  }
+
+  .swiper-button-next {
+  	margin-right: 1.2%;
+  }
+
 
    .call-to-action__scroll-up {
    	width: 35px;
