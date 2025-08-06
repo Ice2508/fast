@@ -573,14 +573,6 @@ h1, h2, h3, h4, h5, h6 {
        overscroll-behavior: contain;
   }
  
-  .swiper-button-prev {
-	margin-left: 3%;
-  }
-
-  .swiper-button-next {
-  	margin-right: 3%;
-  }
-
   .call-to-action {
   	padding: 25px 0 30px;
   }
@@ -635,11 +627,11 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    .swiper-button-prev {
-	margin-left: 0;
+	margin-left: 7%;
   }
 
   .swiper-button-next {
-  	margin-right: 0;
+  	margin-right: 7%;
   }
 
 
