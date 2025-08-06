@@ -635,11 +635,11 @@ h1, h2, h3, h4, h5, h6 {
    }
 
    .swiper-button-prev {
-	margin-left: 0.5%;
+	margin-left: 0;
   }
 
   .swiper-button-next {
-  	margin-right: 0.5%;
+  	margin-right: 0;
   }
 
 
