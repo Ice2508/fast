@@ -112,9 +112,9 @@ popupForm.addEventListener('submit', async (e) => {
           popupForm.reset();
         }, 800);
       } else {
-        popupStatus.textContent = 'ошибка отправки!'
+        popupStatus.textContent = 'Ошибка отправки!'
       }
     } catch {
-      popupStatus.textContent = 'ошбика сетeвого соединения!'
+      popupStatus.textContent = 'Ошибка сетeвого соединения!'
     }
 })
