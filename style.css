@@ -21,6 +21,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
 }
 
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
