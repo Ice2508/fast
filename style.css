@@ -326,7 +326,7 @@ button {
 
 .swiper {
   width: 72%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3/3;
   margin-bottom: 20px;
   cursor: grab;
   touch-action: pan-y;
@@ -485,7 +485,6 @@ button {
 	opacity: 0;
 	justify-content: center;
 	align-items: center;
-	
 }
 
 .popup__overlay--active {
@@ -497,7 +496,8 @@ button {
 }
 
 .popup__form {
-	width: 400px;
+	max-width: 400px;
+	width: 100%;
 	background: whitesmoke;
 	display: flex;
 	flex-direction: column;
@@ -508,12 +508,16 @@ button {
 	position: relative;
 	opacity: 0;
 	transform: translateX(-100vw); 
-	transition: transform 0.5s ease, opacity 0.5s ease;
+	transition: transform 0.7s ease, opacity 0.7s ease;
 }
 
 .popup__title {
 	text-transform: uppercase;
 	font-size: 22px;
+}
+
+.popup-status__subtitle {
+	font-size: 18px;
 }
 
 .popup__form--active {
@@ -589,16 +593,75 @@ button {
 	font-size: 18px;
 }
 
-.popup__status {
-	color: red;
-	font-size: 18px;
-	display: block;
-	text-align: center;
-	width: 100%;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -110%);
+/*попап-статус*/
+
+.popup-status {
+  max-width: 400px;
+  width: 100%;
+  background-color: whitesmoke;
+  border: 5px solid #1b3c71;
+  gap: 20px;
+  padding: 45px;
+  border-radius: 8px;
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
 }
+
+.popup-status--active {
+	display: flex;
+}
+
+.popup-status__wrap {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+
+.popup-status__icon {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border: 5px solid #1b3c71;
+	font-size: 50px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('icon-form-ok.webp');
+	background-size: 50px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.popup-status__text {
+	width: calc(100% - 90px);
+}
+
+.popup-status__title {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.popup-status__btn {
+	width: 92px;
+	height: 40px;
+	color: white;
+	background-color: #1b3c71;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	font-size: 18px;
+	margin-top: 35px;
+}
+
+.popup-status__btn:hover {
+	color: silver;
+}
+
 
 /*Медиазапросы*/
 
